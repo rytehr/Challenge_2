@@ -19,4 +19,14 @@ public class CameraScript : MonoBehaviour
     {
         this.transform.position = new Vector3(target.transform.position.x, this.transform.position.y, this.transform.position.z);
     }
+
+    void Update()
+    {
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
+    }
+    
+    
 }
